@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #010615;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #060c21;
+    position: relative;
+    width: 600px;
+    min-height: 500px;
+    margin: 40px;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -2;
+    filter: blur(40px);
+    margin: 30px;
+}
+.container:before, 
+.container::after{
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.container hr{
+    background-color: #fff;
+}
+.container h1{
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    margin-top: 5px;
+    padding: 10px;
+}
+.container label{
+    font-size: 35px;
+    color: rgb(204, 199, 199);
+    margin-left: 35%;
+    font-weight: bold;
+}
+.container input{
+    font-size: 30px;
+    margin: 10px 5%;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: #333;
+}
+ button{
+    background-color: rgb(196, 15, 15); 
+    color: #fff;
+    font-size: 25px;
+    margin: 15px 35%;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    transition: 0.3s ease;
+    outline: none;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.btn:hover {
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  }
+.container p{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(7, 194, 7);
+    margin: 25px;
+    text-align: center;
+}
+.container p{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(7, 194, 7);
+    margin: 25px;
+}
+
